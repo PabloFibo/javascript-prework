@@ -32,7 +32,55 @@ else if (playerInput == '2') {
 }
 
 else if (playerInput == '3') {
-  playerMove = 'nożyczki'
+  playerMove = 'nożyce'
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+if (computerMove == 'kamień' && playerMove == 'papier') {
+  printMessage ('Ty wygrywasz')
+}
+
+else if (computerMove == 'kamień' && playerMove == 'nożyce') {
+  printMessage ('Przegrałeś, wygrywa komputer')
+}
+
+else if (computerMove == 'kamień' && playerMove == 'kamień') {
+  printMessage ('Remis, nikt nie wygrywa')
+}
+
+else if (computerMove == 'nożyce' && playerMove == 'nożyce') {
+  printMessage ('Remis, nikt nie wygrywa')
+}
+
+else if (computerMove == 'nożyce' && playerMove == 'kamień') {
+  printMessage ('Ty wygrywasz')
+}
+
+else if (computerMove == 'nożyce' && playerMove == 'papier') {
+  printMessage ('Przegrałeś, wygrywa komputer')
+}
+
+else if (computerMove == 'papier' && playerMove == 'nożyce') {
+  printMessage ('Ty wygrywasz')
+}
+
+else if (computerMove == 'papier' && playerMove == 'papier') {
+  printMessage ('Remis, nikt nie wygrywa')
+}
+
+else if (computerMove == 'papier' && playerMove == 'kamień') {
+  printMessage ('Przegrałeś, wygrywa komputer')
+}
+
+else if (computerMove == 'papier' && playerMove == 'nieznany ruch') {
+  printMessage ('Podano nieprawidłową wartość, spróbuj ponownie')
+}
+
+else if (computerMove == 'kamień' && playerMove == 'nieznany ruch') {
+  printMessage ('Podano nieprawidłową wartość, spróbuj ponownie')
+}
+
+else if (computerMove == 'nożyce' && playerMove == 'nieznany ruch') {
+  printMessage ('Podano nieprawidłową wartość, spróbuj ponownie')
+}
